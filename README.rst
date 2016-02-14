@@ -1,6 +1,17 @@
 ===========
 django-furl
 ===========
+|Version| |License| |Downloads|
+
+.. |Version| image:: https://img.shields.io/pypi/v/django-furl.svg?style=flat
+    :target: https://pypi.python.org/pypi/django-furl
+    :alt: Version
+.. |License| image:: https://img.shields.io/pypi/l/django-furl.svg?style=flat
+    :target: https://github.com/poxip/django-furl/blob/master/LICENSE
+    :alt: License
+.. |Downloads| image:: https://img.shields.io/pypi/dm/django-furl.svg
+    :target: https://pypi.python.org/pypi/django-furl
+    :alt: Downloads
 
 **django-furl** is a simple Django wrapper of `Furl
 <https://github.com/gruns/furl>`_'s API. It provides essential template tags
