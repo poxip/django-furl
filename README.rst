@@ -1,5 +1,5 @@
 ===========
-django-furl
+django-furl [WIP]
 ===========
 |Version| |License| |Downloads|
 
@@ -65,3 +65,9 @@ Basic Usage
     {% furl_add 'http://somestuff.tv/search/?facets=Type.Other' facets='Category.Drama' q='True Detective' %}
 
 ``http://somestuff.tv/search/?facets=Type.Other&facets=Category.Drama&q=True+Detective``
+
+.. code-block::
+
+    {% furl_del 'http://somestuff.tv/search/?facets=Type.Other&facets=Category.Other&q=w' 'facets' 'q' %}
+
+``http://somestuff.tv/search/``
