@@ -33,14 +33,14 @@ Installation
 Quick Start
 -----------
 
-1. Add "djangofurl" to your INSTALLED_APPS::
+1. Add "django_furl" to your INSTALLED_APPS::
 
     INSTALLED_APPS = [
         ...
         'django_furl',
     ]
 
-2. Load "djangofurl" in your template::
+2. Load "furl_tags" in your template::
 
     {% load furl_tags %}
 
