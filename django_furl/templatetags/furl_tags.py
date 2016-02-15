@@ -24,7 +24,7 @@ def furl_update(url, **kwargs):
 @register.simple_tag
 def furl_add(url, **kwargs):
     """
-    Add url params to an existing url. Similar to `url_param`.
+    Add url params to an existing url. Similar to `furl_update`.
 
     :param str url - The url to process.
     :param kwargs - The dictionary of parameters to add to the url
@@ -33,3 +33,16 @@ def furl_add(url, **kwargs):
     """
     url = furl(url)
     return url.add(kwargs)
+
+
+@register.simple_tag
+def furl_del(url, *args):
+    """
+    Remove url params from an existing url. Similar to `furl_update`.
+
+    :param str url - The url to process.
+    :param args - The list of parameters to remove from the url.
+    :return The updated url.
+    """
+    url = furl(url)
+    return url.remove(args)

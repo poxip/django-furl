@@ -9,7 +9,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-furl',
-    version='0.0.1',
+    version='0.0.2',
     include_package_data=True,
     packages=['django_furl'],
     url='https://github.com/poxip/django-furl',
