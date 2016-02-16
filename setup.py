@@ -9,15 +9,16 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-furl',
-    version='0.0.2',
+    version='0.0.3',
     include_package_data=True,
-    packages=['django_furl'],
+    packages=['django_furl', 'django_furl.templatetags'],
     url='https://github.com/poxip/django-furl',
     license='MIT',
     author='Michal Proszek',
     author_email='michal.proszek@gmail.com',
     description='A simple Django extension for url manipulation',
     long_description=README,
+    keywords='django url manipulation furl',
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
