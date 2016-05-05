@@ -1,6 +1,7 @@
 language: python
 install:
   - pip install tox
+  - pip install -r test_requirements.txt
 script:
   - tox
 env:
