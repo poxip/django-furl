@@ -8,6 +8,5 @@ script:
 env:
   - TOXENV=django18
   - TOXENV=django19
-  - TOXENV=coverage
 after_success:
   coveralls
