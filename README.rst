@@ -1,11 +1,17 @@
 ===========
 django-furl [WIP]
 ===========
-|Version| |License| |Downloads|
+|Building| |Coverage| |Version| |License| |Downloads|
 
 .. |Version| image:: https://img.shields.io/pypi/v/django-furl.svg?style=flat
     :target: https://pypi.python.org/pypi/django-furl
     :alt: Version
+.. |Building| image:: https://img.shields.io/travis/poxip/django-furl.svg?style=flat
+    :target: https://pypi.python.org/pypi/django-furl
+    :alt: Build Status
+.. |Coverage| image:: https://coveralls.io/repos/github/poxip/django-furl/badge.svg?branch=master
+    :target: https://coveralls.io/github/poxip/django-furl?branch=master
+    :alt: Coverage
 .. |License| image:: https://img.shields.io/pypi/l/django-furl.svg?style=flat
     :target: https://github.com/poxip/django-furl/blob/master/LICENSE
     :alt: License
