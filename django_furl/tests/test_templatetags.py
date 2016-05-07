@@ -1,6 +1,8 @@
 from django.test import TestCase
 
-from django_furl.templatetags.furl_tags import furl_update, furl_add, furl_del
+from django_furl.templatetags.furl_tags import (
+    furl_update, furl_add, furl_del, f_add, f_update
+)
 
 
 class FurlTagsTest(TestCase):
@@ -46,3 +48,13 @@ class FurlTagsTest(TestCase):
         result = str(furl_update(url, **params))
         self.assertIn('q=fun', result)
         self.assertNotIn('q=bar', result)
+
+    def test_f_add(self):
+        result = str(f_add(self.base_url + '/?q=stuff', 'q=series'))
+        self.assertIn('q=series', result)
+        self.assertIn('q=stuff', result)
+
+    def test_f_update(self):
+        result = str(f_update(self.base_url + '/?q=stuff', 'q=series'))
+        self.assertIn('q=series', result)
+        self.assertNotIn('q=stuff', result)
